@@ -10,13 +10,13 @@
 <body>
     <div class="navbar">
         <div class="logo"><a href="#">Logo</a></div>
-        <ul class="navlist">
+        <ul class="navlist" id="navbar_list">
             <li class="list_item"><a href="#">Home</a></li>
             <li class="list_item"><a href="#">Services</a></li>
             <li class="list_item"><a href="#">About</a> us</li>
             <li class="list_item"><a href="#">Contact</a></li>
         </ul>
-        <div class="menu">
+        <div class="menu" id="toggle_button">
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div class="menu-line"></div>
@@ -24,10 +24,10 @@
     </div>
 </body>
 <script>
-    const x = document.getElementById("myTopnav");
-    const x = document.getElementById("myTopnav");
-    x.addEventListener("click", ()=>{
-
+    const toggleButton = document.getElementById("toggle_button");
+    const navbarList = document.getElementById("navbar_list");
+    toggleButton.addEventListener("click", ()=>{
+        navbarList.classList.toggle('active')
     })
 </script>
 </html>
