@@ -76,9 +76,9 @@ body {
     .navlist .list_item{
       display:block;
       border-top: 1px solid white;
-      padding:10px 0;
+      padding:10px 0;    /* getting  padding from default 1em*/
     }
-
+  
     .navbar .logo{
       width: 100%;
       margin-left:20px;
